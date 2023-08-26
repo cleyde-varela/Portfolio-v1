@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Home */
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #EBF0F0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 100px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: #000000;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a:hover{
+    color: #37CBD0 ;
+}
+
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #37CBD0;
+    transition: .3s;
+    bottom: 0;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+.btn{
+    color: #1d1d24;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 13px 20px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #9AE7EA;
+    border: 2px solid #9AE7EA;
+}
+
+.btn:hover{
+    background: transparent;
+    border-color: #9AE7EA;
+}
+
+h1{
+    font-size: 54px;
+}
+
+h4{
+    font-family: monospace;
+    background: #37cbd0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content p {
+    font-family: monospace;
+}
+
+.content{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+span {
+    background: linear-gradient(120deg, #37cbd0 2.69%, #d46826 40.19%, #37cbd0 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: monospace;
+}
+
+.center-content {
+    text-align: center;
+}
+
+/* About me */
+.about{
+    width: 100%;
+    margin: 0;
+    background: #EBF0F0;
+}
+
+.about img{
+    margin-top: 130px;
+    height: auto;
+    width: 350px;
+}
+
+.aboutText{
+    width: 570px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutText p{
+    margin-top: 110px;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 16px;
+    
+}
+
+.circular{
+    border-radius: 50%;
+}
+
+.about button{
+    margin: 0;
+    position: absolute;
+    top: 72%;
+    left: 62%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+html{
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.line{
+    position: absolute;
+    top: 15%;
+    left: 54%;
+    width: 12em;
+    margin: 0 auto;
+    border-right: 2px solid #9AE7EA;
+    font-size: 300%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;transform: translate(-40%);
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: #9AE7EA;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Back button */
+.backBtn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.backBtn:hover {
+    background-color: #37cbd0;
+}
+
+/* Contact me form */
+.formBody{
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #EBF0F0;
+    font-size: 1.2em;
+
+}
+
+.formElements{
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.formField{
+    font-family: sans-serif;
+    width: 60%;
+    border-bottom: 3px solid #37CBD0;
+    outline: 0;
+    font-size: 1em;
+    color: #000000;
+    padding: 10px 7px;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.formLabel{
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.3;
+    font-size: 1em;
+    color: #37CBD0;
+}
+
+.formField:focus{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    border-width: 4px;
+    border-image: linear-gradient(to right, #37CBD0, #d46826);
+    border-image-slice: 1;
+}
+
+.formElements a{
+    margin: 0;
+    position: absolute;
+    top: 76%;
+    right: 20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.projectsBody .firstImg{
+    margin-top: 200px;
+    align-self: center;
+    width: 450px;
+}
+
+.projectsBody img{
+    margin-top: 60px;
+    align-self: center;
+    width: 450px;
+}
+
+html,body{
+    overflow-y: scroll; 
+}
+
+.projectsBody p{
+    text-align: justify;
+}
