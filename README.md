@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 ## 📌 About this project
-* It's a simple portfolio (for myself) developed using HTML, CSS and a bit of Js.
+* It's a simple portfolio (for myself) developed using HTML, CSS and a bit of Js back in my university days (so it's outdated for now)
 * You can navigate through the different tabs in it and learn a bit about me, as well as fill out a contact form (just for demonstration purposes).
 * Some of the features were created following the great tutorials at:
   * https://youtu.be/GVjIflROwJ4?si=Ye3pE7aJI-QMoe9R by **The Hyper Art**
